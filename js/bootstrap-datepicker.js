@@ -1,3 +1,7 @@
+if (typeof jQuery === 'undefined') {
+    throw new Error('Bootstrap\'s JavaScript requires jQuery')
+}
+
 /* =========================================================
  * bootstrap-datepicker.js
  * Repo: https://github.com/eternicode/bootstrap-datepicker/
@@ -20,7 +24,7 @@
  * limitations under the License.
  * ========================================================= */
 
-(function($, undefined){
++(function($, undefined){
 
 	var $window = $(window);
 
@@ -1668,4 +1672,4 @@
 		$('[data-provide="datepicker-inline"]').datepicker();
 	});
 
-}(window.jQuery));
+}(jQuery));
